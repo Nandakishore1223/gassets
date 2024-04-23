@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G-Assets</title>
+<style>
+.dropdown {
+    position: absolute;
+    left: 1055px;
+    top:30px;
+    width: 300px;
+    height: 35px;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">User</button>
+  <div class="dropdown-content">
+    <a href="admin_login.html">Admin</a>
+    <a href="user_login.html">Student</a>
+    <a href="#">Printing staff</a>
+    <a href="#">Store staff</a>
+    <a href="#">Canteen staff</a>
+  </div>
+</div>
+
+</body>
+</html>
