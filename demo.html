@@ -1,62 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>G-Assets</title>
-<style>
-.dropdown {
-    position: absolute;
-    left: 1055px;
-    top:30px;
-    width: 300px;
-    height: 35px;
-  display: inline-block;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-}
+        .registration-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 120px;
-  box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        .registration-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.dropdown-content a {
-  color: black;
-  padding: 14px 20px;
-  text-decoration: none;
-  display: block;
-}
+        .form-group {
+            margin-bottom: 15px;
+        }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
 
-</style>
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-
-<div class="dropdown">
-  <button class="dropbtn">User</button>
-  <div class="dropdown-content">
-    <a href="admin_login.html">Admin</a>
-    <a href="user_login.html">Student</a>
-    <a href="#">Printing staff</a>
-    <a href="#">Store staff</a>
-    <a href="#">Canteen staff</a>
-  </div>
-</div>
-
+    <div class="registration-container">
+        <h2>Registration</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
